@@ -1160,7 +1160,7 @@ body.stretched #header.full-header .container {
 	padding: 39px 15px;
 	color: #444;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -7498,7 +7498,7 @@ body:not(.device-touch) .button.button-full strong {
 }
 
 .feature-box h3 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -11319,7 +11319,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 .heading-block h2 { font-size: 30px; }
 
-.heading-block h3 { font-size: 26px; }
+.heading-block h3 { font-size: 32px; }
 
 .heading-block h4 {
 	font-size: 20px;
@@ -12098,7 +12098,6 @@ button.toast-close-button {
 .footer-widgets-wrap .col_five_sixth { margin-bottom: 0; }
 
 #copyrights {
-	padding: 40px 0;
 	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
@@ -13933,5 +13932,3 @@ body:not(.no-transition) #wrapper,
 	-webkit-text-stroke: 0px !important;
 	text-shadow: none !important;
 }
-
-

@@ -1367,7 +1367,7 @@
 
 	.heading-block h2 { font-size: 26px; }
 
-	.heading-block h3 { font-size: 22px; }
+	.heading-block h3 { font-size: 30px; }
 
 	.heading-block h4 { font-size: 19px; }
 
@@ -1774,4 +1774,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991.98px
 	#logo a.standard-logo { display: none; }
 	#logo a.retina-logo { display: inline-block; }
 }
-
