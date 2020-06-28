@@ -1,0 +1,13 @@
+.ig-icon {
+  padding-top: 19px;
+}
+
+.starman {
+  color: #7d7676;
+}
+
+@media only screen and (max-width: 800px) {
+  .ig-icon {
+    display: none;
+  }
+}
