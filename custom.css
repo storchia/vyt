@@ -32,7 +32,7 @@
 }
 
 .finfo {
-  font-size: 13px;
+  font-size: 13px !important;
   color: #7d7676 !important;
 }
 
@@ -40,4 +40,8 @@
   .ig-icon {
     display: none;
   }
+}
+
+@media (max-width: 767.98px) #copyrights .footer-logo {
+  padding-bottom: 0.5em;
 }
