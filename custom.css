@@ -14,6 +14,10 @@
   height: 12%;
 }
 
+.slider-caption.slider-caption-center {
+  background: #0000004f;
+}
+
 .feature-box h3 {
   font-size: 18px;
 }
@@ -21,6 +25,15 @@
 .ul-us {
   line-height: 1.5 !important;
   margin-bottom: 0px;
+}
+
+.footer-logo {
+  height: 120px !important;
+}
+
+.finfo {
+  font-size: 13px;
+  color: #7d7676 !important;
 }
 
 @media only screen and (max-width: 800px) {
