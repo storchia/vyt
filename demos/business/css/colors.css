@@ -5,15 +5,15 @@
 -----------------------------------------------------------------*/
 
 ::selection {
-  background: #00bed7;
+  background: #f8b037;
 }
 
 ::-moz-selection {
-  background: #00bed7;
+  background: #f8b037;
 }
 
 ::-webkit-selection {
-  background: #00bed7;
+  background: #f8b037;
 }
 
 a,
@@ -98,7 +98,7 @@ h6 > span:not(.nocolor):not(.badge),
 .nav-tree li:hover > a,
 .nav-tree li.current > a,
 .nav-tree li.active > a {
-  color: #00bed7 !important;
+  color: #f8b037 !important;
 }
 
 #primary-menu.style-3 > ul > li.current > a,
@@ -167,7 +167,7 @@ input.switch-toggle-round:checked + label:before,
 .page-link,
 .page-link:hover,
 .page-link:focus {
-  background-color: #00bed7 !important;
+  background-color: #f8b037 !important;
 }
 
 #primary-menu.style-4 > ul > li:hover > a,
@@ -184,7 +184,7 @@ input.switch-toggle-round:checked + label:before,
 .dark .post-timeline .entry:hover .timeline-divider,
 .dark .cart-product-thumbnail img:hover,
 .heading-block.border-color:after {
-  border-color: #00bed7;
+  border-color: #f8b037;
 }
 
 .top-links ul ul,
@@ -206,16 +206,16 @@ input.switch-toggle-round:checked + label:before,
 .irs-from:after,
 .irs-single:after,
 .irs-to:after {
-  border-top-color: #00bed7;
+  border-top-color: #f8b037;
 }
 
 #page-menu.dots-menu nav li span:after,
 .title-block {
-  border-left-color: #00bed7;
+  border-left-color: #f8b037;
 }
 
 .title-block-right {
-  border-right-color: #00bed7;
+  border-right-color: #f8b037;
 }
 
 .fancy-title.title-bottom-border h1,
@@ -226,7 +226,7 @@ input.switch-toggle-round:checked + label:before,
 .fancy-title.title-bottom-border h6,
 .more-link,
 .tabs.tabs-bb ul.tab-nav li.ui-tabs-active a {
-  border-bottom-color: #00bed7;
+  border-bottom-color: #f8b037;
 }
 
 .border-color,
@@ -236,19 +236,19 @@ input.switch-toggle-round:checked + label:before,
 .page-link,
 .page-link:hover,
 .page-link:focus {
-  border-color: #00bed7 !important;
+  border-color: #f8b037 !important;
 }
 
 .fbox-effect.fbox-dark .fbox-icon i:after,
 .dark .fbox-effect.fbox-dark .fbox-icon i:after {
-  box-shadow: 0 0 0 2px #00bed7;
+  box-shadow: 0 0 0 2px #f8b037;
 }
 
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i,
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i {
-  box-shadow: 0 0 0 1px #00bed7;
+  box-shadow: 0 0 0 1px #f8b037;
 }
 
 @media only screen and (max-width: 991px) {
@@ -297,16 +297,16 @@ input.switch-toggle-round:checked + label:before,
     > ul
     > li.mega-menu-title
     > a:hover {
-    color: #00bed7 !important;
+    color: #f8b037 !important;
   }
 
   #page-menu nav {
-    background-color: #00bed7;
+    background-color: #f8b037;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .portfolio-filter li a:hover {
-    color: #00bed7;
+    color: #f8b037;
   }
 }
