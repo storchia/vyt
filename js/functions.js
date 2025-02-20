@@ -3571,6 +3571,13 @@ var SEMICOLON = SEMICOLON || {};
 			if( $portfolio.length > 0 ) { SEMICOLON.portfolio.init(); }
 			SEMICOLON.widget.init();
 			SEMICOLON.documentOnReady.windowscroll();
+			
+			$(document).on('click', '.htl-btn', function(e) {
+				console.log('htl-btn clicked');
+				 // Force navigation by uncommenting the following line if needed:
+				window.location.href = $(this).attr('href');
+				return true; // Ensures default behavior executes.
+			});
 		},
 
 		windowscroll: function(){
