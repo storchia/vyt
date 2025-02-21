@@ -3734,4 +3734,79 @@ var SEMICOLON = SEMICOLON || {};
 	$window.on( 'load', SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
+	$(document).on('click', 'a.nav-link[href="/index.html"]', function(e) {
+		// Ensure any default prevention is overridden.
+		e.stopPropagation();
+		window.location.href = '/index.html';
+	});
+
+	// Added event handler for asistencia-medica.html
+	$(document).on('click', 'a.nav-link[href="/asistencia-medica.html"]', function(e) {
+		e.stopPropagation();
+		window.location.href = '/asistencia-medica.html';
+	});
+
+	$(document).ready(function(){
+		 // Debug output removed after testing:
+		// console.log("Document ready, binding nav-link click...");
+		$(document).on('click', 'a.nav-link[href$="#section-us"]', function(e) {
+			// console.log("nav-link for #section-us clicked");
+			e.stopPropagation();
+			e.preventDefault();
+			var target = $('#section-us');
+			// Compute sticky header height dynamically
+			var stickyNavHeight = $('#header').outerHeight();
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top - stickyNavHeight
+				}, 500);
+			} else {
+				window.location.href = '/index.html#section-us';
+			}
+			return false;
+			});
+			
+			// New event binding for #section-services
+			$(document).on('click', 'a.nav-link[href$="#section-services"]', function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				var target = $('#section-services');
+				var stickyNavHeight = $('#header').outerHeight();
+				// If not on home page, redirect to it with the hash appended.
+				if (window.location.pathname !== "/index.html") {
+					window.location.href = '/index.html#section-services';
+					return false;
+				}
+				// On home page; if the target exists, animate scrolling.
+				if(target.length > 0) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - stickyNavHeight
+					}, 500);
+				} else {
+					window.location.href = '/index.html#section-services';
+				}
+				return false;
+				});
+				
+				// New event binding for #contact-info similar to #section-services
+				$(document).on('click', 'a.nav-link[href$="#contact-info"]', function(e) {
+					e.stopPropagation();
+					e.preventDefault();
+					var target = $('#contact-info');
+					var stickyNavHeight = $('#header').outerHeight();
+					if (window.location.pathname !== "/index.html") {
+						window.location.href = '/index.html#contact-info';
+						return false;
+					}
+					if (target.length > 0) {
+						$('html, body').animate({
+							scrollTop: target.offset().top - stickyNavHeight
+						}, 500);
+					} else {
+						window.location.href = '/index.html#contact-info';
+					}
+					return false;
+				});
+	});
+
 })(jQuery);
