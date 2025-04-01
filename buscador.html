@@ -214,7 +214,7 @@
 	============================================= -->
     <script src="js/functions.js"></script>
 
-    <script>
+      <script>
       // Owl Carousel Scripts
       $("#oc-features").owlCarousel({
         items: 1,
@@ -232,15 +232,38 @@
         }
       });
     </script>
+
     <script>
-  document.querySelectorAll('#primary-menu a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      console.log('Clicked:', this.href);
-      if (this.href && !this.dataset.href) {
-        window.location.href = this.href; // Force navigation
-      }
-    });
-  });
-</script>
+      document.querySelectorAll('#primary-menu a').forEach(link => {
+        link.addEventListener('click', function (e) {
+          console.log('Clicked:', this.href);
+          if (this.href && !this.dataset.href) {
+            window.location.href = this.href; // Force navigation
+          }
+        });
+      });
+    </script>
+
+    <!-- 🚫 Block iframe from forcing navigation -->
+    <script>
+      window.addEventListener("beforeunload", function (event) {
+        if (document.activeElement.tagName === "IFRAME") {
+          console.warn("Attempted navigation from iframe blocked.");
+          event.preventDefault();
+        }
+      });
+
+      // 🚫 Block JavaScript-based navigation attempts from the iframe
+      window.addEventListener("message", function (event) {
+        if (event.origin === "https://www.time4click.com") {
+          if (typeof event.data === "string" && event.data.startsWith("javascript:")) {
+            console.warn("Blocked unsafe navigation attempt:", event.data);
+            return;
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>
+
